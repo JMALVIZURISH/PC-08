@@ -1,0 +1,25 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36" version="27.0.6">
+  <diagram name="Diagrama de Clases" id="ESwwveqeuM-RUZ3IZbDn">
+    <mxGraphModel dx="1042" dy="562" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Po7e6I-aBJcb87XkKhWY-1" value="&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;Alumno&#xa;+ nombre: String&#xa;+ notas: float[10]&#xa;-------------------&#xa;+ tenerNotasAprobadas&#xa;+ tenerNotasReprobadas&#xa;+ calcularPromedio" style="shape=swimlane;swimlaneLine=1;startSize=20;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="300" y="230" width="250" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="Po7e6I-aBJcb87XkKhWY-2" value="&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;Curso&#xa;&#xa;+ alumnos: Alumno[10]&#xa;-------------------&#xa;+ agregarAlumno&#xa;+ mostrarNotasAprobadas&#xa;+ mostrarNotasReprobadas&#xa;+ mostrarPromedioGrupo" style="shape=swimlane;swimlaneLine=1;startSize=20;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="640" y="250" width="280" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="Po7e6I-aBJcb87XkKhWY-3" value="&#xa;&#xa;&#xa;&#xa;&#xa;Programa&#xa;&#xa;+ validarNombre&#xa;+ validarNota&#xa;+ mostrarMenu&#xa;+ iniciar" style="shape=swimlane;swimlaneLine=1;startSize=20;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="250" width="260" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Po7e6I-aBJcb87XkKhWY-4" style="endArrow=block;endSize=6;" edge="1" parent="1" source="Po7e6I-aBJcb87XkKhWY-2" target="Po7e6I-aBJcb87XkKhWY-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Po7e6I-aBJcb87XkKhWY-5" style="endArrow=open;endSize=6;" edge="1" parent="1" source="Po7e6I-aBJcb87XkKhWY-3" target="Po7e6I-aBJcb87XkKhWY-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
